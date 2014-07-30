@@ -24,7 +24,7 @@ function breakline {
 			done
 
 			rtn=$rtn${text:0:$spaceloc}$"$delimiter"
-			text=${text:$spaceloc}
+			text=${text:$spaceloc+1}
 		else
 			rtn=$rtn$text
 			text=""
